@@ -13,8 +13,7 @@ if (isset($_POST['submit'])) {
   $uname = $_POST['user-name'];
   $upswd = md5($_POST['user-pswd']);
   // SQL Query 
-  $query = "Select * From user Where uname='$uname' AND upswd='$upswd'";
-  // echo "Password : " . strcmp("d8578edf8458ce06fbc5bb76a58c5ca4","d8578edf8458ce06fbc5bb76a58c5ca4"); 
+  $query = "Select * From user Where uname='$uname' AND upswd='$upswd';";
   $result = mysqli_query($connection, $query) or die("Query Failed");
 }
 ?>

@@ -28,7 +28,7 @@
           echo "<div class='alert danger'>Username or Email Allready Registered</div>";
         } else {
           // Register
-          $query = "Insert Into user(uname,uemail,upswd) Values('{$uname}','{$upswd}','{$uemail}')";
+          $query = "Insert Into user(uname,uemail,upswd) Values('{$uname}','{$uemail}','{$upswd}')";
           mysqli_query($connection, $query) or die("Query Failed");
           mysqli_close($connection);
           // echo "<div class='alert success'>Register Successfully</div>";
